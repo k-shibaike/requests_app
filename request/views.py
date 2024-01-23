@@ -11,6 +11,5 @@ def detail(request):
         city_number = request.POST.get('location')
         print("city_number->", city_number)
 
-        # ここにweatherAPIの処理書いてもいい
-
+        # ここにweatherAPIの処理書いてもいいし、別のファイルに分けても良い
   return render(request, 'request/detail.html')
